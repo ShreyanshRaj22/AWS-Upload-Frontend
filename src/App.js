@@ -13,7 +13,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      await axios.post('http://3.86.77.67/upload', formData, {
+      await axios.post('http://54.83.112.117:8080/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
