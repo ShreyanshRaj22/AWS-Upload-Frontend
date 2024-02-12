@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import Navbar from '../components/Navbar'
 
 const HomePage = () => {
     const [file, setFile] = useState(null);
@@ -26,6 +27,7 @@ const HomePage = () => {
     };
     return (
         <div>
+            <Navbar heading='Home' />
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload}>Upload</button>
         </div>
